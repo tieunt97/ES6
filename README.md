@@ -3,23 +3,23 @@ Learn ES6
 Tạo file "package.json":
 
  $ npm init -y
-Setup babel:
+2. Setup babel:
 
  $ npm install --save babel-cli
  $ npm install --save babel-preset-env
-Chỉnh sửa file package.json:
+3. Chỉnh sửa file package.json:
 
  "scripts": {
  	"babel-node": "babel-node",
  	"test": "echo \"Error: no test specified\" && exit 1"
  },
-Trong thư mục gốc, tạo file ".babelrc", copy đoạn sau:
+4. Trong thư mục gốc, tạo file ".babelrc", copy đoạn sau:
 
  {
  	"presets": [
  		"env"
  	]
  }
-Để chạy một file bất kì. Trong thư mục gốc, chạy lệnh:
+5. Để chạy một file bất kì. Trong thư mục gốc, chạy lệnh:
 
  $ npm run babel-node "đường dẫn file cần chạy"
